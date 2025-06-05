@@ -1,0 +1,37 @@
+html, body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  text-align: center;
+}
+
+.container {
+  background-color: rgb(236, 188, 124);
+  width: 70%;
+  min-height: 200px; /* Ensures small box but grows if needed */
+  margin: 40px auto;
+  border-radius: 10px;
+  padding: 20px;
+  box-sizing: border-box;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+  color: rgb(84, 50, 9);
+}
+
+button {
+  margin: 10px;
+  padding: 8px 16px;
+  font-size: 16px;
+  background-color: rgb(237, 152, 77);
+  border: none;
+  border-radius: 5px;
+}
+
+button:hover {
+  background-color: blue;
+  color: white;
+  cursor: pointer;
+}
+
+#btn {
+  margin-top: 10px;
+}
