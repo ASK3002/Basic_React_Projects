@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Basic React Projects</title>
   <style>
     body {
@@ -16,36 +16,37 @@
     h1 {
       font-size: 2.5rem;
       color: #007bff;
+      margin-bottom: 10px;
     }
 
     p {
       font-size: 1.1rem;
-      margin-bottom: 40px;
+      margin-bottom: 30px;
     }
 
-    .project-list {
-      list-style: none;
-      padding: 0;
+    .project-grid {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 20px;
     }
 
-    .project-list li {
+    .card {
+      display: block;
+      width: 220px;
+      padding: 20px;
       background: white;
-      margin: 10px auto;
-      padding: 15px 20px;
-      border-radius: 8px;
-      width: 300px;
-      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-      transition: transform 0.2s ease;
-    }
-
-    .project-list li:hover {
-      transform: scale(1.03);
-    }
-
-    .project-list a {
+      border-radius: 10px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
       text-decoration: none;
       color: #0056b3;
       font-weight: bold;
+      transition: transform 0.2s ease, box-shadow 0.2s ease;
+    }
+
+    .card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 6px 18px rgba(0,0,0,0.15);
     }
 
     footer {
@@ -59,12 +60,10 @@
   <h1>Basic React Projects</h1>
   <p>Explore small, fun projects made with React and Vite!</p>
 
-  <h1>My React Projects</h1>
-    <ul>
-    <li><a href="./bg_changer/dist/">BG Changer</a></li>
-    <li><a href="./counterUsingReact/dist/">Counter App</a></li>
-    </ul>
-
+  <div class="project-grid">
+    <a class="card" href="./bg_changer/dist/">🎨 BG Changer</a>
+    <a class="card" href="./counterUsingReact/dist/">🔢 Counter App</a>
+  </div>
 
   <footer>© 2025 Ayush Singh Kaushik</footer>
 </body>
