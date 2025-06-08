@@ -35,8 +35,12 @@ function App() {
 
   return (
     <>
-      <div className="w-full max-w-md mx-auto shadow-md rounded-lg px-4 py-3 my-8 bg-gray-600 text-blue-400">
-        <h1 className='text-white text-center my-3'>Password Generator</h1>
+      <div className="w-full h-screen flex flex-wrap justify-center items-center bg-cover bg-no-repeat" 
+      style={{
+            backgroundImage: `url('https://i0.wp.com/picjumbo.com/wp-content/uploads/autumn-background-with-space-for-text-and-leaves-around-free-image.jpeg?w=2210&quality=70')`,
+        }}>
+        <div className="w-[500px] h-[200px] mx-auto shadow-md rounded-3xl px-4 py-3 my-8 bg-lime-400/30 text-green-950 font-semibold">
+        <h1 className='text-lime-950 text-center my-3  text-lg'>Password Generator</h1>
         <div className="flex shadow rounded-lg overflow-hidden mb-4">
           <input
           type='text'
@@ -52,13 +56,13 @@ function App() {
           className='outline-none bg-green-500 hover:bg-red-500 text-white px-3 py-0.5 shrink-0'
           >copy</button>
         </div>
-        <div className="flex items-center gap-x-1">
+        <div className="flex items-center gap-x-5">
           <input
           type='range'
           min={6}
           max={100}
           value={length}
-          className='cursor-pointer accent-green-500'
+          className='cursor-pointer accent-orange-600'
           onChange={(e)=>{setLength(e.target.value)}}
           >
           </input>
@@ -68,7 +72,7 @@ function App() {
             type='checkbox'
             defaultChecked={numAllowed}
             id="numAllowed"
-            className=' accent-green-500'
+            className=' accent-orange-600'
             onClick={()=>{
               setNumAllowed((prev)=>!prev)
             }}
@@ -81,7 +85,7 @@ function App() {
             type='checkbox'
             defaultChecked={specialCharAllowed}
             id="specialCharAllowed"
-            className=' accent-green-500'
+            className=' accent-orange-600 '
             onClick={()=>{
               setSpecialCharAllowed((prev)=>!prev)
             }}
@@ -91,6 +95,8 @@ function App() {
           </div>
 
         </div>
+        <h3 className='text-green-950 text-center mt-5'>© 2025 Ayush Singh Kaushik</h3>
+      </div>
       </div>
     </>
   )
