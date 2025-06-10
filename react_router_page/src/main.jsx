@@ -43,6 +43,10 @@ const router=createBrowserRouter(
 
     </Route>
   )
+  ,
+  {
+    basename: '/Basic_React_Projects/react_router_page', // ✅ CRITICAL FOR GITHUB PAGES
+  }
 )
 
 createRoot(document.getElementById('root')).render(
