@@ -42,7 +42,10 @@ const router=createBrowserRouter(
       />
 
     </Route>
-  )
+  ),
+  {
+    basename: '/react_router_page', // <- IMPORTANT
+  }
 )
 
 createRoot(document.getElementById('root')).render(
