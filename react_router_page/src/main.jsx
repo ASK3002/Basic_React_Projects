@@ -44,7 +44,7 @@ const router=createBrowserRouter(
     </Route>
   ),
   {
-    basename: '/react_router_page', // <- IMPORTANT
+    basename:"/Basic_React_Projects/react_router_page", // <- IMPORTANT
   }
 )
 
